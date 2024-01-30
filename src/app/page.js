@@ -3,8 +3,11 @@ import Chat from '../components/Chat/Chat';
 
 export default function Home() {
   return (
-    <main>
-      <Chat />
-    </main>
+    <>
+      <title>ChatBot</title>
+      <main>
+        <Chat />
+      </main>
+    </>
   );
 }
