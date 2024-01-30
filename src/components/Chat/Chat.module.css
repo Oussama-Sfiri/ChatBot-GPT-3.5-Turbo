@@ -108,3 +108,14 @@
   color:rgb(26, 49, 149);
   font-weight: bold;
 }
+
+.botImageHolder{
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.botImage{
+  width: 70px;
+  height: 70px;
+}

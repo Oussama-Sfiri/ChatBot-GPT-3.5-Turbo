@@ -18,7 +18,7 @@ const Chat = () => {
     setIsClicked(true);
     if(inputText != ""){
       
-      const openaiApiKey = 'YOUR_OPENAI_API_KEY';
+      const openaiApiKey = 'YOUR_OPEN_AI_KEY';
       const openaiEndpoint = 'https://api.openai.com/v1/chat/completions';
 
       // Send the user's message to the OpenAI API
@@ -43,7 +43,7 @@ const Chat = () => {
       // Update the chat with the user's message and the chatbot's response
       setMessages((prevMessages) => [
         ...prevMessages,
-        { text: inputText, sender: 'user' },
+        { text: inputText, sender: 'You' },
         { text: response.data.choices[0].message.content, sender: 'bot' },
       ]);
 
@@ -63,7 +63,7 @@ const Chat = () => {
   return (
     <div className={styles.chatContainer}>
       <div>
-        <h1 className={styles.title}>Talk to Chatbot</h1>
+        <h1 className={styles.title}>Talk to Chatbot <span className={styles.botImageHolder}><img src='icon.png' className={styles.botImage}></img></span></h1>
       </div>
 
       <div className={styles.formContainer}>
